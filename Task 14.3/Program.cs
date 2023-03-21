@@ -7,6 +7,20 @@ namespace Task_14._3
       //Например, для пары 123 и 345, ответом будет являться “ДА”, а, для пары 500 и 999 - “НЕТ”.
         static void Main(string[] args)
         {
+            string q = "1234";
+            string w = "56789";
+            bool r =false;
+            for (int i = 0; i < q.Length; i++)
+            {
+                for (int z = 0; z < w.Length; z++)
+                {
+                    if (q[i] == w[z])
+                    {
+                        r=true;
+                    }
+                }
+            }
+
             int num1 = Convert.ToInt32(Console.ReadLine());
             int num2 = Convert.ToInt32(Console.ReadLine());
             int a = 0;
